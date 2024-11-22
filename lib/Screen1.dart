@@ -22,7 +22,16 @@ class _Screen1State extends State<Screen1> {
               SizedBox(height: 20,),
               ElevatedButton(onPressed: (){
               Navigator.pushNamed(context ,arguments: userName, '/screen2' );
-              }, child:Icon(Icons.arrow_back,) ,)
+              }, child:
+              Container(
+                width: 50,
+                height: 50,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.blue, // لون الخلفية
+                ),
+                child: Icon(Icons.arrow_forward, color: Colors.white), // لون الأيقونة
+              ),)
             ],
           ),
         ),

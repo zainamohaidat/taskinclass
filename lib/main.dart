@@ -3,6 +3,7 @@ import 'package:taskinclass/Screen1.dart';
 import 'package:taskinclass/Screen2.dart';
 import 'Screen1.dart';
 import 'Screen2.dart';
+import 'Screen3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/screen1':(context)=>Screen1(),
         '/screen2':(context)=>Screen2(),
+        '/screen3':(context)=>Screen3(),
       },
     );
   }
